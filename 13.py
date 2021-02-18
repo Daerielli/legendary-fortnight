@@ -10,6 +10,11 @@ for price in range (1, count + 1):
         price = 1390
     else:
         print("Введите корректный возраст!")
-a = (a + (price * count))
 
-print(a)
+if count > 3:
+    a = (a + ((price * count)*0.9))
+    print("Общая стоимость билетов:",a)
+else:
+    a = (a + (price * count))
+    print("Общая стоимость билетов:",a)
+
