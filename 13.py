@@ -10,6 +10,6 @@ for price in range (1, count + 1):
         price = 1390
     else:
         print("Введите корректный возраст!")
-a = a + price
+a = (a + (price * count))
 
 print(a)
