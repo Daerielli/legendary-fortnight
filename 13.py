@@ -1,7 +1,7 @@
 count = int(input("Введите количество билетов:"))
 a = 0
-age = int(input("Введите возраст посетителей:"))
 for price in range (1, count + 1):
+    age = int(input("Введите возраст посетителей:"))
     if 18 <= age <= 25:
         price = 990
     elif 0 <= age <= 18:
@@ -11,4 +11,5 @@ for price in range (1, count + 1):
     else:
         print("Введите корректный возраст!")
 a = a + price
+
 print(a)
